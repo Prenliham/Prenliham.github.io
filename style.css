@@ -1,0 +1,232 @@
+:root{
+    ---font-poppins: "Poppins", sans-serif;
+    ---font-grape: "Grape Nuts", cursive;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-color: rgb(218, 175, 120);
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.cover-book{
+    height: 25rem;
+    width: 40rem;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(20deg);
+}
+
+.slide{
+    display: flex;
+    position: absolute;
+    inset: 0;
+    transition: all 1s;
+}
+
+.left , .right{
+    width: 50%;
+}
+
+.left{
+    transition: all 1s;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-left: 1px solid white;
+    box-shadow: -1px -1px 1px grey;
+}
+
+.tittle{
+    transform: rotateY(7deg);
+}
+
+.hal-1{
+    transform: rotateY(6deg);
+}
+.hal-2{
+    transform: rotateY(5deg);
+}
+.hal-3{
+    transform: rotateY(4deg);
+}
+.hal-4{
+    transform: rotateY(3deg);
+}
+.hal-5{
+    transform: rotateY(2deg);
+}
+.hal-6{
+    transform: rotateY(1deg);
+}
+
+
+
+/* rotate  */
+.open-tittle{
+    transform: rotateY(176deg);
+}
+
+.open-tittle .container-isi{
+    background-color: rgb(218, 175, 120);
+    transition: all 1s;
+}
+
+.open-hal-1{
+    transform: rotateY(175deg);
+}
+
+.open-hal-2{
+    transform: rotateY(174deg);
+}
+.open-hal-3{
+    transform: rotateY(173deg);
+}
+.open-hal-4{
+    transform: rotateY(172deg);
+}
+.open-hal-5{
+    transform: rotateY(171deg);
+}
+.open-hal-6{
+    transform: rotateY(170deg);
+}
+
+.shadow{
+    background-color: grey;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    transform: rotateX(20deg);
+    transition: all .8s;
+    right: 50%;
+}
+
+.open-shadow{
+    width: 100%;
+    transition: all .8s;
+    right: 0;
+}
+
+.close-shadow{
+    right: 0;
+    width: 50%;
+    transition: all 1s;
+}
+
+
+.container-isi{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 50%;
+    left: 0;
+    padding: 1em 10px;
+    transition: all 1s;
+}
+
+.header{
+    text-align: center;
+    font-family: var(---font-grape);
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    font-size: 30px;
+}
+
+.cover{
+    background-image: url(image/backtittle.png);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    align-items: end;
+    justify-content: center;
+    color: white;
+    font-family: var(---font-grape);
+    text-shadow: 1px 1px 1px black;
+}
+
+.list{
+    background-color: rgb(255, 255, 255);
+}
+
+.hal-1 .h-hal-1{
+    text-align: center;
+    font-family: var(---font-grape);
+}
+
+.hal-1 .hero-hal-1>ul{
+    list-style: inside;
+    list-style-type:lower-roman;
+    padding: 5px;
+    font-family: var(---font-grape);
+    font-style: italic;
+    font-size: 13px;
+}
+
+
+.hal-1 .hero-hal-1 ul li>ul{
+    list-style:none;
+    padding: 0 1rem;
+    overflow:hidden ;
+}
+
+.hal-1 .hero-hal-1 ul li ul> li{
+    display: flex;
+    font-style: italic;
+}
+
+.h-hal-2 h3{
+    font-family: var(---font-grape);
+}
+.h-hal-2 p{
+    font-size: 9px;
+    font-family: var(---font-grape);
+}
+
+.h-hal-3 h3{
+    font-size: 13px;
+}
+.h-hal-3{
+    font-family: var(---font-grape);
+    font-size: 9px;
+}
+
+.h-hal-4{
+    font-family: var(---font-grape);
+}
+
+.h-hal-4 h3{
+    font-size: 13px;
+}
+
+.h-hal-4 p{
+    font-size: 10px;
+}
+
+.hal-6 img{
+    width: 80px;
+}
+
+.hal-6 ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    list-style: none;
+}
+
+.hal-5 .container-isi{
+    font-family: var(---font-grape);
+    font-size: 12px;
+}
